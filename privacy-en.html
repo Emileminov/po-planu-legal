@@ -14,6 +14,7 @@
   li { margin-bottom: 6px; }
   .updated { color: #6e6e73; font-size: 14px; }
   .lang { float: right; font-size: 14px; }
+  @media (prefers-color-scheme: dark) { body { background: #000; color: #f2f2f7; } .updated { color: #98989d; } a { color: #0a84ff; } }
 </style>
 </head>
 <body>
@@ -21,69 +22,41 @@
   <h1>Privacy Policy</h1>
   <p class="updated">Updated: October 2026</p>
 
-  <p>Po Planu (“По Плану”) does not collect your personal data, does not store
-  it on any server, and does not sell it to third parties. Below is exactly
-  what happens to information inside the app.</p>
+  <p>Po Planu (“По Плану”) does not collect your personal data, shows no ads and does not track you. Your tasks live on your device. The only thing that can leave your phone is the text of a phrase you say to the Lumi assistant, and only if you choose to use it. Below is exactly what is sent and where.</p>
 
   <h2>Tasks you create</h2>
-  <p>All tasks, goals, their titles, dates and settings are stored only on your
-  device. The app has no server of its own and nothing is sent to the
-  developer. The only exception is the optional backup that you create
-  yourself (see below).</p>
-
+  <p>All tasks, goals, lists, their titles, dates and settings are stored only on your device and are never sent to the developer, in whole or in part. The only exception is the optional backup that you create yourself (see below).</p>
   <h2>Voice input</h2>
-  <p>If you add a task by voice, the recording is processed by Apple’s system
-  speech recognition service (Speech framework). Depending on your device and
-  iOS version, this may happen on the device itself or on Apple’s servers; that
-  is standard iOS behaviour. The app does not store recordings and has no
-  access to them after recognition.</p>
-
+  <p>If you add a task by voice, the recording is processed by Apple’s system speech recognition service (Speech framework). Depending on your device and iOS version, this may happen on the device itself or on Apple’s servers — that is standard iOS behaviour. The app does not store recordings and has no access to them after recognition.</p>
+  <h2>Lumi assistant (optional)</h2>
+  <p>Lumi works only after you agree to it and only while you hold its button. Your speech is first turned into text by the iPhone (see “Voice input”); the audio itself is never sent anywhere.</p>
+  <p>Only that text is sent to our server, together with the current date, time zone and language, so that phrases like “tomorrow at five” are understood. The request also carries a random installation identifier: it is not linked to your name, account or advertising identifier and is used only for the daily request limit. Your tasks, goals and lists are not sent to the server.</p>
+  <p>The server passes the text to Anthropic’s Claude model to split it into tasks and returns the result to the app right away. The server does not keep your text: its technical log holds only service details without content (an anonymised identifier, text length, time and response code), and the IP address is used only to prevent abuse. Anthropic processes the text under its commercial API terms: such data is not used to train models and is kept for a limited time.</p>
+  <p>Before anything is added you see everything the assistant understood and can correct it. Lumi can be turned off in the app’s settings.</p>
+  <h2>Subscription</h2>
+  <p>The subscription is purchased and billed through the App Store. Apple processes the payment: the developer does not receive your name, email or payment details. The app checks your subscription status with Apple on the device; to lift Lumi’s daily limit it may send our server Apple’s confirmation of the subscription, without personal data. You can manage or cancel the subscription in your Apple ID settings. Subscription terms are on the <a href="terms-en.html">Terms of Use</a> page.</p>
   <h2>Notifications</h2>
-  <p>Task reminders and the evening summary are scheduled locally through the
-  iOS notification system. This does not involve any servers or sending data
-  anywhere.</p>
-
-  <h2>Home Screen widget</h2>
-  <p>The widget reads the task list from shared protected storage on the device
-  itself (App Group) in order to show current data, and marks completed tasks
-  there too. This is also entirely local.</p>
-
+  <p>Reminders and the evening summary are scheduled locally through the iOS notification system. This does not involve sending data anywhere.</p>
+  <h2>Home screen widget</h2>
+  <p>The widget reads tasks from shared protected storage on the device itself (App Group) in order to show the current list, and marks completed tasks there too. This is also entirely local.</p>
   <h2>Backup (optional)</h2>
-  <p>Only if you tap “Create backup” in settings does the app save a copy of
-  your tasks, goals and settings to the iOS Keychain on your device. If iCloud
-  Keychain is turned on in your phone settings, Apple syncs it to your other
-  devices with end-to-end encryption; the developer has no access to it. The
-  copy stays in your Keychain after the app is deleted so that you can restore
-  it after reinstalling.</p>
-
+  <p>Only if you tap “Create backup” in settings does the app save a copy of your tasks, goals and settings to the iOS Keychain on your device. If iCloud Keychain is turned on in your phone settings, Apple syncs it to your other devices with end-to-end encryption; the developer has no access to it. The copy stays in your Keychain after the app is deleted so that you can restore it after reinstalling.</p>
   <h2>Photos</h2>
-  <p>If you tap “Save to Photos” on the Results screen, the app saves a picture
-  of your statistics to Photos. Access is requested for adding only: the app
-  does not read your photo library.</p>
-
+  <p>If you tap “Save to Photos” on the Results screen, the app saves a picture of your statistics to Photos. Access is requested for adding only: the app does not read your photo library.</p>
   <h2>What the app does not do</h2>
   <ul>
-    <li>Does not collect analytics or track user behaviour</li>
+    <li>Does not collect analytics or track behaviour</li>
     <li>Shows no ads</li>
-    <li>Uses no third-party SDKs for data collection</li>
     <li>Requires no sign-up or account</li>
-    <li>Does not share or sell data to third parties</li>
+    <li>Does not sell data or share it for advertising</li>
+    <li>A third-party service is involved only in Lumi (Anthropic) and only with the text you dictated yourself</li>
   </ul>
-
   <h2>Revoking permissions</h2>
-  <p>Microphone access, speech recognition, photo access and notifications can
-  be turned off at any time in your device settings:
-  <b>Settings → Po Planu</b>, where you can also turn them back on. Voice
-  input can also be switched off inside the app’s own settings.</p>
-
+  <p>Microphone access, speech recognition, photo access and notifications can be turned off at any time in your device settings: <b>Settings → Po Planu</b>. Voice input and the Lumi assistant can also be switched off inside the app’s own settings.</p>
   <h2>Deleting your data</h2>
-  <p>Deleting the app removes everything it stored on your device. The
-  exception is the optional backup in your Keychain, which stays so that you
-  can restore it after reinstalling. Your data was never sent to the
-  developer, so no deletion request to us is needed.</p>
+  <p>Deleting the app removes everything it stored on your device. The exception is the optional backup in your Keychain, which stays so that you can restore it after reinstalling. Your tasks were never sent to the developer and the server does not keep the text of Lumi requests, so no deletion request to us is needed.</p>
 
   <h2>Contact</h2>
-  <p>For any privacy questions, write to:
-  <a href="mailto:eminov@icloud.com">eminov@icloud.com</a></p>
+  <p>For any privacy questions, write to: <a href="mailto:eminov@icloud.com">eminov@icloud.com</a></p>
 </body>
 </html>
